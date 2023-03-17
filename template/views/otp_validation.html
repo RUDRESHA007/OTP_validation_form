@@ -18,7 +18,7 @@
                 <div class="  validation">
                     <div>
                         <h2>Enter the varification to continue</h2>
-                        <p>We sent to <a href=""><%=data.email%> <%=data.option%></a>. if you don't see it,check spam.</p>
+                        <p>We sent to your email address. if you don't see it,check spam.</p>
                     </div>
 
                     <form method="post" action="/entered_otp" class="otp_container ">
@@ -31,6 +31,7 @@
 
                         </div>
                         <input type="text" class="gen_otp hide" name="gen_otp" value=<%=gen_otp%> readonly>
+                        <input type="text" class="gen_otp otp_display" name="" value='your genarated OTP:<%=gen_otp%>' readonly>
                         <button class="submit">Submit</button>
                         <p class="error"><%=error%></p>
                  

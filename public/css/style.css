@@ -91,6 +91,18 @@
 .hide{
     display: none;
 }
+.otp_display{
+    display: block;
+    position: absolute;
+    border: none;
+    top: -15rem;
+    left: 4rem;
+    padding: .5rem;
+    background: #0000ff47;
+    color: white;
+    border-radius: .5rem;
+    font-size: 1rem;
+}
     .actions .resend {
         pointer-events: none;
         text-align: right;
@@ -206,12 +218,16 @@
 
     .otp_container .error {
         position: absolute;
-        TOP: -12.9rem;
+        TOP: -18.9rem;
+        left: 6rem;
+        font-size: .9rem;
+        /* width: 13rem; */
+        padding: .5rem;
         BORDER-RADIUS: .5REM;
         FONT-WEIGHT: 900;
         color: red;
         background: #ff00003d;
-        width: 100%;
+        width: 50%;
         text-align: center;
     }
 
@@ -338,16 +354,37 @@
 }
 
 @media only screen and (max-width: 600px) {
+    .otp_display {
+      
+top: -12rem;
+      
+padding: 0.5rem;
+      
+font-size: .7rem;
+    }
+    .otp_container .error {
+        TOP: -9.9rem;
+        font-size: .7rem;
+        padding: 0.5rem;
+        width: 7rem;
+        left: 2.8rem;
+    }
     .signup_container {
-        width: 85%;
+        width: 90%;
         height: 60vh;
     }
     .otp_sec {
   
         gap: 0.5rem;
     }
-
-    .logo {
+    .otp_sec .otp{
+        width: 2rem;
+        height: 2rem;
+    }   
+    .validation p {
+        padding: .5rem;
+    }
+     .logo {
         width: 3rem;
         height: 3rem;
     }

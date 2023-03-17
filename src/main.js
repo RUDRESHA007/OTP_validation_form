@@ -57,7 +57,6 @@ app.get('/validation', (req, res) => {
   }
   const gen_otp = generateOTP()
 
-  alert(`your generated otp is : ${gen_otp}`)
   res.render('otp_validation', {
     error: '',
     'gen_otp': gen_otp,
