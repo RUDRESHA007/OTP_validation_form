@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="signup_container">
+            <img src="2.png" alt="" class="logo">
+            <div class="signup_page">
+
+                <!-- <div class="  validation">
+                    <div>
+                        <h2>Enter the varification to continue</h2>
+                        <p>We sent to <a href="">helloworld@gmail.com</a>. if you don't see it,check spam.</p>
+                    </div>
+
+                    <form method="post" action="/entered_otp"  class="otp_container ">
+                        <div class="otp_sec ">
+                            <input type="number" class="otp" name="t1" value='' maxlength="1" required>
+                            <input type="number" class="otp" name="t2" value=''  maxlength="1" required>
+                            <input type="number" class="otp" name="t3" value='' maxlength="1" required>
+                            <input type="number" class="otp" name="t4" value='' maxlength="1" required>
+                            <input type="number" class="otp" name="t5" value='' maxlength="1" required>
+
+                        </div>
+                        <button class="submit">Submit</button>
+                        <p class="error">invalid otp</p>
+
+                        <div class="actions">
+                            <p class="back">Back</p>
+                            <p class="resend">Resend 00:10</p>
+                        </div>
+
+                    </form>
+                </div> -->
+                <div class="signup">
+                    <h2>Welcome to Power Makers</h2>
+                    <form method='get' action="/validation" class="inputs">
+                        <div class="email_sec">
+                            <input type="text" name="email" class="email" placeholder="enter emailID" required>
+                            <select name="option" id="">
+                                <!-- <option value="">@heads.desighn    s</option> -->
+                                <option value="@gmail.com" name="op1">@gmail.com</option>
+                                <option value="@yahoo.com" name="op2">@yahoo.com</option>
+                            </select>
+                        </div>
+                        <input type="password" class="password" placeholder="password" required>
+                        <button class="next">Next</button>
+                    </form>
+                    <p>forgot your password?</p>
+                </div>
+                <div class="vector_img">
+                    <img src="1.png" alt="" class="image">
+                    <img src="2.png" alt="" class="image">
+                    <img src="3.png" alt="" class="image">
+                    <img src="4.png" alt="" class="image">
+                    <img src="5.png" alt="" class="image">
+                    <div class="dots">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                </div>
+
+            </div>
+            <p class="bottom_signup">next member? <a href=""> Create Account</a></p>
+        </div>
+    </div>
+
+</body>
+<script src="slider.js"></script>
+
+</html>

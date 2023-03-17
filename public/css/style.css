@@ -1,0 +1,382 @@
+@import url("https://fonts.googleapis.com/css2?family=Amita&family=Audiowide&family=Baloo+2:wght@500&family=Comfortaa:wght@400;500;700&family=Fredoka+One&family=Grand+Hotel&family=Homemade+Apple&family=Kanit:ital,wght@1,300&family=Montserrat:ital,wght@0,100;0,500;1,300;1,900&family=Nunito:ital,wght@0,300;0,400;1,600&family=Old+Standard+TT&family=Oswald:wght@200;400&family=Poppins:wght@100;300&family=Prompt:ital,wght@0,400;1,300&family=Racing+Sans+One&family=Rubik+Marker+Hatch&family=Secular+One&family=Syncopate&family=Ubuntu:wght@700&family=Yantramanav:wght@500&display=swap");
+
+@media only screen and (max-width: 2000px) {
+    * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        appearance: none;
+        margin: 0px;
+    }
+
+    .container {
+        font-family: Poppins, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        scroll-behavior: smooth;
+        overflow: hidden;
+        background: rgb(242, 242, 243);
+    }
+    .success_container{
+        background-color: #fff;
+    }
+
+    .signup_container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 60%;
+        height: 80%;
+        scroll-behavior: smooth;
+        overflow: hidden;
+        background-color: rgb(255, 255, 255);
+        border-radius: 1rem;
+        padding: 3rem;
+        box-shadow: rgba(0, 0, 0, 0.38) 0.1rem 0.1rem 0.5rem;
+    }
+
+    .logo {
+        width: 4rem;
+        height: 4rem;
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+    }
+
+    .signup_page {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        justify-content: space-evenly;
+    }
+
+    .signup {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        flex-direction: column;
+    }
+
+    .validation {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        flex-direction: column;
+    }
+
+
+    .validation .actions {
+        width: 100%;
+        height: 1.5rem;
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+.hide{
+    display: none;
+}
+    .actions .resend {
+        pointer-events: none;
+        text-align: right;
+        width: 70%;
+        color: blue;
+        text-decoration: none;
+        font-weight: 900;
+        color: rgb(218, 218, 221);
+    }
+.time{
+    text-decoration: none;
+        font-weight: 900;
+
+}
+    .actions .back {
+        width: 30%;
+        color: rgb(0, 0, 255);
+    }
+
+    h1 {
+        font-weight: 900;
+        width: 90%;
+    }
+
+    .signup p {
+        color: rgb(0, 0, 0);
+        font-weight: 900;
+        cursor: pointer;
+    }
+
+    .validation p {
+        width: 90%;
+        color: rgb(0, 0, 0);
+        font-weight: 900;
+        cursor: pointer;
+        padding: 1rem;
+    }
+
+    .validation h1 {
+        padding: 0.5rem;
+        width: 90%;
+        color: blue;
+        font-weight: 900;
+        cursor: pointer;
+    }
+
+    .signup_container .bottom_signup {
+        position: absolute;
+        left: 1.5rem;
+        bottom: 1rem;
+    }
+
+    a {
+        color: blue;
+        text-decoration: none;
+        font-weight: 900;
+    }
+
+    .signup .inputs,
+    .otp_container {
+        width: 80%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        flex-direction: column;
+    }
+
+    .otp_container {
+        position: relative;
+        display: flex;
+        gap: 0px;
+        transition: all 0.5s ease-in-out 0s;
+    }
+
+    .email_sec {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 1rem 0.4rem;
+        height: 3rem;
+        background-color: rgb(242, 242, 243);
+        border-radius: 0.5rem;
+        overflow: hidden;
+    }
+
+    .otp_sec {
+        width: 100%;
+        padding: 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .otp_sec .otp {
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 0.5rem;
+        padding: 0.8rem;
+        font-size: 1.1rem;
+        border: 0.1rem solid rgb(4, 4, 171);
+        font-weight: 700;
+        transition: all 0.5s ease-in 0s;
+    }
+
+    .otp_sec .otp:focus {
+        box-shadow: rgba(0, 0, 255, 0.525) 0.01rem 0.01rem 0.4rem;
+        outline: none;
+    }
+
+    .otp_container .error {
+        position: absolute;
+        TOP: -12.9rem;
+        BORDER-RADIUS: .5REM;
+        FONT-WEIGHT: 900;
+        color: red;
+        background: #ff00003d;
+        width: 100%;
+        text-align: center;
+    }
+
+    .submit {
+        display: none;
+        width: 50%;
+        height: auto;
+        padding: 0.5rem;
+        margin-top: 1rem;
+    }
+
+    .email_sec input {
+        width: 100%;
+        padding: 0.5rem;
+        border: none;
+        outline: none;
+        background-color: rgb(242, 242, 243);
+        height: 100%;
+    }
+
+    .email_sec select {
+        border-radius: 0.5rem;
+        width: 100%;
+        text-align: center;
+        height: 2.5rem;
+        padding: 0.5rem;
+        border: none;
+        outline: none;
+    }
+
+    .password {
+        width: 100%;
+        border: none;
+        outline: none;
+        padding: 1rem;
+        height: 3rem;
+        background-color: rgb(242, 242, 243);
+        border-radius: 0.5rem;
+    }
+
+    button {
+        width: 100%;
+        border: none;
+        outline: none;
+        padding: 1rem 0.4rem;
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: whitesmoke;
+        height: 3rem;
+        background-color: rgb(8, 88, 247);
+        border-radius: 0.5rem;
+        transition: all 0.5s ease-in 0s;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: rgba(8, 88, 247, 0.87);
+    }
+
+    .vector_img {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgb(8, 88, 247);
+        border-radius: 1rem;
+        overflow: hidden;
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+            transform: scale(0.9);
+        }
+
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    .vector_img img {
+        animation: 2s ease 0s 1 normal none running fadeIn;
+        position: relative;
+        background-color: rgb(8, 88, 247);
+        padding: 1rem;
+        width: 100%;
+        height: 100%;
+        display: none;
+        transition: all 0.5s ease-out 0s;
+    }
+
+    .dots {
+        position: absolute;
+        bottom: 5rem;
+        width: 9rem;
+        height: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .dot {
+        transition: all 0.5s ease-in 0s;
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 50%;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .active {
+        width: 0.8rem;
+        height: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .signup_container {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .signup_container {
+        width: 85%;
+        height: 60vh;
+    }
+
+    .logo {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .signup {
+        gap: 1rem;
+    }
+
+    .email_sec select {
+        height: 1.5rem;
+        padding: 0px;
+    }
+
+    .email_sec {
+        height: 2rem;
+    }
+
+    .password,
+    button {
+        height: 2rem;
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+
+    .vector_img {
+        display: none;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+}
