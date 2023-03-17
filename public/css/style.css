@@ -342,6 +342,10 @@
         width: 85%;
         height: 60vh;
     }
+    .otp_sec {
+  
+        gap: 0.5rem;
+    }
 
     .logo {
         width: 3rem;
@@ -378,5 +382,6 @@
 
     p {
         font-size: 0.8rem;
+        padding: .5rem;
     }
 }
